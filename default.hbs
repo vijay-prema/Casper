@@ -47,6 +47,16 @@
             <div class="gh-head-actions">
                 <button class="gh-search" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                 <div class="gh-social">
+                    {{#link href="/rss" target="_blank" class="gh-social-link gh-social-facebook" title="RSS"}}{{> "icons/rss"}}{{/link}}
+                    {{#if @custom.youtube_url}}
+                        <a class="gh-social-link gh-social-facebook" href="{{@custom.youtube_url}}" title="Youtube" target="_blank" rel="me noopener">{{> "icons/youtube"}}</a>
+                    {{/if}}
+                    {{#if @custom.odysee_url}}
+                        <a class="gh-social-link gh-social-facebook" href="{{@custom.odysee_url}}" title="Odysee" target="_blank" rel="me noopener">{{> "icons/odysee"}}</a>
+                    {{/if}}
+                    {{#if @custom.mastodon_url}}
+                        <a class="gh-social-link gh-social-facebook" href="{{@custom.mastodon_url}}" title="Mastodon" target="_blank" rel="me noopener">{{> "icons/mastodon"}}</a>
+                    {{/if}}
                     {{#if @site.facebook}}
                         <a class="gh-social-link gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="me noopener">{{> "icons/facebook"}}</a>
                     {{/if}}
@@ -73,11 +83,11 @@
     {{!-- The global footer at the very bottom of the screen --}}
     <footer class="site-footer outer">
         <div class="inner">
-            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <section class="copyright">Made with ❤️ by <a href="{{@site.url}}">Vijay</a> &copy; {{date format="YYYY"}}</section>
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+            <div>{{#link href="/privacy" target="_blank"}}Privacy Policy{{/link}}</div>
         </div>
     </footer>
 
