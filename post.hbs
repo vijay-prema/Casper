@@ -86,6 +86,12 @@ into the {body} tag of the default.hbs template --}}
         {{content}}
     </section>
 
+    <hr style="width: 70%;  margin: auto; margin-top: 5em">
+
+    <section class="article-comments gh-canvas">
+        <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="{{@custom.telegram_comments_siteid}}" data-limit="5"{{#match @custom.color_scheme "Dark"}} data-dark="1"{{/match}}></script>
+    </section>
+
     {{#if comments}}
         <section class="article-comments gh-canvas">
             {{comments}}

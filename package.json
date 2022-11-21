@@ -180,6 +180,10 @@
             "odysee_url": {
                 "type": "text",
                 "group": "site-wide"
+            },
+            "telegram_comments_siteid": {
+                "type": "text",
+                "group": "post"
             }
         }
     },
