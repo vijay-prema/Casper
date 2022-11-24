@@ -43,7 +43,7 @@
         "url": "https://github.com/TryGhost/Casper.git"
     },
     "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+    "contributors": ["https://github.com/TryGhost/Casper/graphs/contributors"],
     "devDependencies": {
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.7",
@@ -178,6 +178,10 @@
                 "group": "site-wide"
             },
             "odysee_url": {
+                "type": "text",
+                "group": "site-wide"
+            },
+            "liberapay_url": {
                 "type": "text",
                 "group": "site-wide"
             },

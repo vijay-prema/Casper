@@ -56,6 +56,9 @@
                     {{#if @custom.mastodon_url}}
                         <a class="gh-social-link gh-social-facebook" href="{{@custom.mastodon_url}}" title="Mastodon" target="_blank" rel="me noopener">{{> "icons/mastodon"}}</a>
                     {{/if}}
+                    {{#if @custom.liberapay_url}}
+                        <a class="gh-social-link gh-social-facebook" href="{{@custom.liberapay_url}}" title="Liberapay" target="_blank" rel="me noopener">{{> "icons/liberapay"}}</a>
+                    {{/if}}
                     {{#if @site.facebook}}
                         <a class="gh-social-link gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="me noopener">{{> "icons/facebook"}}</a>
                     {{/if}}
