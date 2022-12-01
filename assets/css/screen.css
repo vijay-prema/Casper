@@ -795,6 +795,7 @@ production stylesheet in assets/built/screen.css
         align-items: center;
         padding: max(4vmin, 20px) 0;
         background-color: #fff;
+        margin-bottom: 100px;
     }
 
     .gh-head-open #gh-head .gh-head-button {
