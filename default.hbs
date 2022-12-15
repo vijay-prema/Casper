@@ -98,7 +98,26 @@
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <div>{{#link href="/privacy" target="_blank"}}Privacy Policy{{/link}}</div>
+            <div>
+                <div style="">
+                    {{#link href="/privacy" target="_blank"}}Privacy Policy{{/link}}
+                </div>
+                <div style="display: inline-block; margin-right: 10px; margin-top: 10px; padding: 10px 0;">
+                    <a rel="indie-web" href="https://indieweb.org/">
+                        {{> "icons/indieweb"}}
+                    </a>
+                </div>
+                <div style="display: inline-block; margin-right: 10px; margin-top: 5px; padding: 5px 0;">
+                    <a rel="humane-tech" href="https://github.com/humanetech-community/awesome-humane-tech">
+                        <img alt="Humane Tech" style="border-width:0" src="https://raw.githubusercontent.com/humanetech-community/awesome-humane-tech/main/humane-tech-badge.svg?sanitize=true" />
+                    </a>
+                </div>
+                <div style="display: inline-block; margin-right: 20px; margin-top: 5px">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
