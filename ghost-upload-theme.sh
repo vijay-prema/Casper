@@ -6,6 +6,8 @@
 # GHOST_LOGIN_EMAIL=your@email.com
 # GHOST_LOGIN_PASS=your-secure-login-password
 
+source .env
+
 yarn zip
 
 curl -c ghost-cookie.txt -d username=$GHOST_LOGIN_EMAIL -d password=$GHOST_LOGIN_PASS \
