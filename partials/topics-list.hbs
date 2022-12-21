@@ -1,0 +1,14 @@
+{{!< default}}
+
+<main id="site-main" class="site-main outer" style="padding-top: 10px;" role="main">
+  <div class="inner" >
+    <span style='padding-right: 10px;'>Topics:</span>
+    {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+    {{#foreach tags}}
+        <a href='{{ url }}'>
+        <span style='padding-right: 10px; font-weight: bold; color:{{ accent_color }};'>{{ name }} <small>({{ count.posts }})</small></span>
+        </a>
+    {{/foreach}}
+    {{/get}}
+  </div>
+</main>

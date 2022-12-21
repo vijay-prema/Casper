@@ -41,7 +41,7 @@ which templates loop over to generate a list of posts. --}}
             <header class="post-card-header">
                 <div class="post-card-tags">
                     {{#primary_tag}}
-                        <span class="post-card-primary-tag">{{name}}</span>
+                        <span class="post-card-primary-tag" style="color:{{ accent_color }};">{{name}}</span>
                     {{/primary_tag}}
                     {{#if featured}}
                         <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
