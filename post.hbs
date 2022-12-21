@@ -88,9 +88,24 @@ into the {body} tag of the default.hbs template --}}
 
     <hr style="width: 70%;  margin: auto; margin-top: 5em">
 
-    <section class="article-comments gh-canvas">
-        <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="{{@custom.telegram_comments_siteid}}" data-limit="5"{{#match @custom.color_scheme "Dark"}} data-dark="1"{{/match}}></script>
+    <section class="article-comments gh-canvas" name="article-comments" id="article-comments">
     </section>
+
+    <script type="text/javascript">
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                //dark mode
+            } else {
+                //light mode
+            }
+        });
+
+        const html = window.matchMedia('(prefers-color-scheme: dark)').matches ?
+            "<script async src=\"https://comments.app/js/widget.js?3\" data-comments-app-website=\"CS9JJA-5\" data-limit=\"5\" data-dark=\"1\"><\/script>" :
+            "<script async src=\"https://comments.app/js/widget.js?3\" data-comments-app-website=\"CS9JJA-5\" data-limit=\"5\" data-dark=\"0\"><\/script>"
+        const scriptEl = document.createRange().createContextualFragment(html);
+        document.getElementById("article-comments").append(scriptEl);
+    </script>
 
     {{#if comments}}
         <section class="article-comments gh-canvas">
