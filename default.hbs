@@ -17,6 +17,8 @@
     it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
 
+    <link rel="stylesheet" href="{{@site.url}}/assets/prism.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body class="{{body_class}} is-head-{{#match @custom.navigation_layout "Logo on cover"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Modern sans-serif"}} has-sans-body{{/match}}{{#if @custom.show_publication_cover}} has-cover{{/if}}">
 <div class="viewport">
@@ -145,6 +147,7 @@ $(document).ready(function () {
 
 {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
+<script src="{{@site.url}}/assets/prism.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 </html>
