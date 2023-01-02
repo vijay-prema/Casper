@@ -48,24 +48,27 @@
 
             <div class="gh-head-actions">
                 <div class="gh-social">
-                    {{#link href="/rss" target="_blank" class="gh-social-link gh-social-facebook" title="RSS"}}{{> "icons/rss"}}{{/link}}
+                    {{#link href="/rss" target="_blank" class="gh-social-link" title="RSS"}}{{> "icons/rss"}}{{/link}}
                     {{#if @custom.youtube_url}}
-                        <a class="gh-social-link gh-social-facebook" href="{{@custom.youtube_url}}" title="Youtube" target="_blank" rel="me noopener">{{> "icons/youtube"}}</a>
+                        <a class="gh-social-link" href="{{@custom.youtube_url}}" title="Youtube" target="_blank" rel="me noopener">{{> "icons/youtube"}}</a>
                     {{/if}}
                     {{#if @custom.odysee_url}}
-                        <a class="gh-social-link gh-social-facebook" href="{{@custom.odysee_url}}" title="Odysee" target="_blank" rel="me noopener">{{> "icons/odysee"}}</a>
+                        <a class="gh-social-link" href="{{@custom.odysee_url}}" title="Odysee" target="_blank" rel="me noopener">{{> "icons/odysee"}}</a>
                     {{/if}}
                     {{#if @custom.mastodon_url}}
                         <a class="gh-social-link gh-social-facebook" href="{{@custom.mastodon_url}}" title="Mastodon" target="_blank" rel="me noopener">{{> "icons/mastodon"}}</a>
                     {{/if}}
                     {{#if @custom.liberapay_url}}
-                        <a class="gh-social-link gh-social-facebook" href="{{@custom.liberapay_url}}" title="Liberapay" target="_blank" rel="me noopener">{{> "icons/liberapay"}}</a>
+                        <a class="gh-social-link" href="{{@custom.liberapay_url}}" title="Liberapay" target="_blank" rel="me noopener">{{> "icons/liberapay"}}</a>
                     {{/if}}
                     {{#if @site.facebook}}
-                        <a class="gh-social-link gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="me noopener">{{> "icons/facebook"}}</a>
+                        <a class="gh-social-link" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="me noopener">{{> "icons/facebook"}}</a>
                     {{/if}}
                     {{#if @site.twitter}}
-                        <a class="gh-social-link gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="me noopener">{{> "icons/twitter"}}</a>
+                        <a class="gh-social-link" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="me noopener">{{> "icons/twitter"}}</a>
+                    {{/if}}
+                    {{#if @custom.identity_url}}
+                        <a class="gh-social-link" href="{{@custom.identity_url}}" title="Verified" target="_blank" rel="me noopener">{{> "icons/verified"}}</a>
                     {{/if}}
                 </div>
                 {{#unless @site.members_enabled}}

@@ -181,6 +181,10 @@
                 "type": "text",
                 "group": "site-wide"
             },
+            "identity_url": {
+                "type": "text",
+                "group": "site-wide"
+            },
             "liberapay_url": {
                 "type": "text",
                 "group": "site-wide"
