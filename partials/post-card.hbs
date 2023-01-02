@@ -45,6 +45,9 @@ which templates loop over to generate a list of posts. --}}
                         <span class="post-card-primary-tag" style="color:{{ accent_color }};">{{name}}</span>
                     {{/primary_tag}}
                     {{/unless}}
+                    {{#has tag="#video"}}
+                        <span class="post-card-featured">{{> "icons/youtube"}}</span>
+                    {{/has}}
                     {{#if featured}}
                         <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
                     {{/if}}
