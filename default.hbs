@@ -17,6 +17,16 @@
     it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
 
+    
+    {{#has slug="ghost"}}
+    {{else}}
+    {{#if @custom.umami_website_id}}
+    <!-- Umami -->
+    <script async defer data-website-id="{{@custom.umami_website_id}}" src="{{@custom.umami_script_url}}"></script>
+    <!-- End Umami Code -->
+    {{/if}}
+    {{/has}}
+
     <link rel="stylesheet" href="{{@site.url}}/assets/prism.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
