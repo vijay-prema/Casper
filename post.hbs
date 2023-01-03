@@ -150,7 +150,9 @@ into the {body} tag of the default.hbs template --}}
     {{#get "posts" filter="id:-{{id}}" limit="3" as |more_posts|}}
 
         {{#if more_posts}}
-            <aside class="read-more-wrap outer">
+    <section class="gh-content gh-canvas">
+<button style="background-color:rgb(177, 177, 177, 0)" class="gh-head-button" id="toggler" onclick="showHideToggle(`target`)">See More Posts ▼</button></section>
+            <aside id="target" style="display:none" class="read-more-wrap outer">
                 <div class="read-more inner">
                     {{#foreach more_posts}}
                         {{> "post-card"}}
