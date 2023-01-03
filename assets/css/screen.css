@@ -870,6 +870,9 @@ production stylesheet in assets/built/screen.css
     flex-direction: column;
     background-size: cover;
     word-break: break-word;
+    margin-top:30px;
+    margin-left:15px;
+    margin-right:15px;
 }
 
 .post-card-image-link {
