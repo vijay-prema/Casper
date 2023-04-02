@@ -105,8 +105,8 @@ into the {body} tag of the default.hbs template --}}
         });
 
         const html = window.matchMedia('(prefers-color-scheme: dark)').matches ?
-            "<script async src=\"https://comments.app/js/widget.js?3\" data-comments-app-website=\"CS9JJA-5\" data-limit=\"5\" data-dark=\"1\"><\/script>" :
-            "<script async src=\"https://comments.app/js/widget.js?3\" data-comments-app-website=\"CS9JJA-5\" data-limit=\"5\" data-dark=\"0\"><\/script>"
+            "<script async src=\"https://comments.app/js/widget.js?3\" data-comments-app-website=\"{{@custom.telegram_comments_siteid}}\" data-limit=\"5\" data-dark=\"1\"><\/script>" :
+            "<script async src=\"https://comments.app/js/widget.js?3\" data-comments-app-website=\"{{@custom.telegram_comments_siteid}}\" data-limit=\"5\" data-dark=\"0\"><\/script>"
         const scriptEl = document.createRange().createContextualFragment(html);
         document.getElementById("article-comments").append(scriptEl);
     </script>

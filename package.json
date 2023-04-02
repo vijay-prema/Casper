@@ -177,15 +177,11 @@
                 "type": "text",
                 "group": "site-wide"
             },
-            "odysee_url": {
-                "type": "text",
-                "group": "site-wide"
-            },
             "identity_url": {
                 "type": "text",
                 "group": "site-wide"
             },
-            "liberapay_url": {
+            "github_url": {
                 "type": "text",
                 "group": "site-wide"
             },
@@ -195,11 +191,11 @@
             },
             "umami_script_url": {
                 "type": "text",
-                "group": "site-wide"
+                "group": "brand"
             },
             "umami_website_id": {
                 "type": "text",
-                "group": "site-wide"
+                "group": "brand"
             }
         }
     },

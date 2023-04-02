@@ -1,14 +1,16 @@
 {{!< default}}
 
-<main id="site-main" class="site-main outer" style="padding-top: 10px;" role="main">
-  <div class="inner" >
-    <span style='padding-right: 10px;'>Topics:</span>
+<main id="site-main" class="gh-content gh-canvas" style="" role="main">
+  <div class="inner" style='margin-top: 20px; text-align:center;' >
+    <h5 style="text-decoration:none;">
+    <div style='padding-bottom: 10px;'>Topics:<br></div>
     {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
     {{#foreach tags}}
-        <a href='{{ url }}'>
+        <a style="text-decoration:none" href='{{ url }}'>
         <span style='padding-right: 10px; font-weight: bold; color:{{ accent_color }};'>{{ name }} <small>({{ count.posts }})</small></span>
         </a>
     {{/foreach}}
     {{/get}}
+    </h5>
   </div>
 </main>
