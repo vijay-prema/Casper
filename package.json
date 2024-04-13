@@ -2,7 +2,7 @@
     "name": "casper-vijay",
     "description": "A clean, minimal theme for the Ghost publishing platform, modified by Vijay",
     "demo": "https://vijayprema.com",
-    "version": "5.7.0",
+    "version": "5.7.2",
     "engines": {
         "ghost": ">=5.0.0"
     },
